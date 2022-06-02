@@ -7,11 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Update Student details</h1>
+<h1>Update Subject details</h1>
 	<form action="updatedetailssubject.jsp">
-		Enter the id for which records to be updated  : <input type="text" name="id" required>
+	<table>
+	<tr><td>Enter the id for which records to be updated  :</td><td><input type="text" name="id" required></td></tr>
+	<tr><td>Enter the updated Subjectname : </td><td><input type="text" name="name" required></td></tr>
+	</table>
+		 
 		<br>
-		Enter the updated Subjectname : <input type="text" name="name" required>
+		
 		<br>
 		
 		<input type="submit" value="updateSubject">

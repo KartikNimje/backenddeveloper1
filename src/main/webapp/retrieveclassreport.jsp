@@ -24,9 +24,9 @@
 	%>
 	<table> 
 	<%int i=1; %>
-	<tr><th>Sr.No</th><th>Subject</th><th>Teacher</th><th>Actions</th></tr>
+	<tr><th>Sr.No</th><th>Subject</th><th>Teacher</th></tr>
 	<%for(St ss:list3){ %>
-		<tr><td><%=i++ %></td><td><%=ss.getSubject() %></td><td><%=ss.getTeacher() %></td><td><a href="deleteinterfacest.jsp">delete</a></td></tr>
+		<tr><td><%=i++ %></td><td><%=ss.getSubject() %></td><td><%=ss.getTeacher() %></td></tr>
 	<%}%>
 	</table>
 

@@ -9,7 +9,8 @@
 <body>
 <h1>Class deletion</h1>
 	<form action="deleteclasses.jsp">
-		Id : <input type="text" name="id" required>
+	<table><tr><td>Id :</td><td><input type="text" name="id" required></td></tr></table>
+		
 		<br>
 		
 		<input type="submit" value="delete">

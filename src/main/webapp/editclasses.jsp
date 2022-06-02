@@ -9,9 +9,13 @@
 <body>
 <h1>Update Classes details</h1>
 	<form action="updatedetailsclasses.jsp">
-		Enter the id for which records to be updated  : <input type="text" name="id" required>
+	<table>
+	<tr><td>Enter the id for which records to be updated  :</td><td><input type="text" name="id" required></td></tr>
+	<tr><td>Enter the updated Classname : </td><td><input type="text" name="name" required></td></tr>
+	</table>
+		 
 		<br>
-		Enter the updated Classname : <input type="text" name="name" required>
+		
 		<br>
 		
 		<input type="submit" value="updateClass">
