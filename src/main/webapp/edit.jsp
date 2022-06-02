@@ -12,18 +12,15 @@
 <body>
 	<h1>Update Student details</h1>
 	<form action="updatedetails.jsp">
-		Enter the id for which records to be updated  : <input type="text" name="id" required>
-		<br>
-		Enter the updated Firstname : <input type="text" name="firstname" required>
-		<br>
-		Enter the updated Lastname : <input type="text" name="lastname">
-		<br>
-		Enter the updated DOB : <input type="date" name="dob">
-		<br>
-		Enter the updated Address : <input type="text" name="address" required>
-		<br>
-		Enter the updated Phone : <input type="text" name="phone">
-		<br>
+	<table>
+	<tr><td>Enter the id for which records to be updated  :</td><td><input type="text" name="id" required></td></tr>
+	<tr><td>Enter the updated Firstname :</td><td><input type="text" name="firstname" required></td></tr>
+	<tr><td>Enter the updated Lastname :</td><td><input type="text" name="lastname"></td></tr>
+	<tr><td>Enter the updated DOB :</td><td><input type="date" name="dob"></td></tr>
+	<tr><td>Enter the updated Address : </td><td> <input type="text" name="address" required></td></tr>
+	<tr><td>Enter the updated Phone :</td><td><input type="text" name="phone"></td></tr>
+	</table>
+		
 		<%
 		ClassesDAO dao2=new ClassesDAO();
 		List<Classes> list2=dao2.getallclasses();
@@ -35,6 +32,8 @@
 		  <option value="<%=ss.getName() %>"><%=ss.getName() %></option>
 		  <%}%>
 		</select>
+		<br>
+		<br>
 		<input type="submit" value="update">
 		
 	</form>

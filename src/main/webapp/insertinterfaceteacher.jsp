@@ -9,20 +9,19 @@
 <body>
 <h1>Add New Teacher</h1>
 <form action="insertteacher.jsp">
-Teacherid   : <input type="text" name="id" required>
+<table>
+<tr><td>Teacherid   : </td><td><input type="text" name="id" required></td></tr>
+<tr><td>Firstname :</td><td><input type="text" name="firstname" required></td></tr>
+<tr><td>Lastname : </td><td><input type="text" name="lastname"></td></tr>
+<tr><td>DOB : </td><td><input type="date" name="dob"></td></tr>
+<tr><td>Address :</td><td><input type="text" name="address" required></td></tr>
+<tr><td>Phone :</td><td><input type="text" name="phone"></td></tr>
+<tr><td>Designation :</td><td> <input type="text" name="designation" required></td></tr>
+
+</table>
+
 <br>
-Firstname : <input type="text" name="firstname" required>
-<br>
-Lastname : <input type="text" name="lastname">
-<br>
-DOB : <input type="date" name="dob">
-<br>
-Address : <input type="text" name="address" required>
-<br>
-Phone : <input type="text" name="phone">
-<br>
-Designation : <input type="text" name="designation" required>
-<br>
+
 <input type="submit" value="Save">
 </form>
 

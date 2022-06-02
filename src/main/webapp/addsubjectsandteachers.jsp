@@ -49,6 +49,7 @@ List<Teacher> list1=dao1.getallteachers();
   <%}%>
 </select>
 <br>
+<br>
 <input type="submit" value="save">
 
 </form>

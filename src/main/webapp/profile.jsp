@@ -8,29 +8,33 @@
 </head>
 <body>
 
-<h1>Welcome to Learners Academy</h1>
-Click on the respective button to perform your operation
+<h1>Dashboard</h1>
+<h3>Welcome to Learners Academy</h3>
+
 <table>
 <tr>
 	<td><form action="retrieve.jsp">
-	<input type="submit" value="getStudentsList">
+	<input type="submit" value="Student List">
 	</form></td>
 </tr>
 <tr>
 	<td><form action="retrievesubject.jsp">
-	<input type="submit" value="getSubjectsList">
+	<input type="submit" value="Subject List">
 	</form></td>
 </tr>
+
 <tr>
 	<td><form action="retrieveteacher.jsp">
-	<input type="submit" value="getTeachersList">
+	<input type="submit" value="Teacher List">
 	</form></td>
 </tr>
+
 <tr>
 	<td><form action="retrieveclasses.jsp">
-	<input type="submit" value="getClassList">
+	<input type="submit" value="Class List">
 	</form></td>
 </tr>
 </table>
+
 </body>
 </html>

@@ -12,18 +12,15 @@
 <body>
 <h1>Add New Student</h1>
 <form action="insert.jsp">
-Studentid   : <input type="text" name="id" required>
-<br>
-Firstname : <input type="text" name="firstname" required>
-<br>
-Lastname : <input type="text" name="lastname">
-<br>
-DOB : <input type="date" name="dob">
-<br>
-Address : <input type="text" name="address" required>
-<br>
-Phone : <input type="text" name="phone">
-<br>
+<table>
+<tr><td>Studentid :</td><td><input type="text" name="id" required></td></tr>
+<tr><td>Firstname :</td><td><input type="text" name="firstname" required></td></tr>
+<tr><td>Lastname :</td><td><input type="text" name="lastname"></td></tr>
+<tr><td>DOB : </td><td><input type="date" name="dob"></td></tr>
+<tr><td>Address :</td><td><input type="text" name="address" required></td></tr>
+<tr><td>Phone :</td><td><input type="text" name="phone"></td></tr>
+</table>
+
 <%
 ClassesDAO dao2=new ClassesDAO();
 List<Classes> list2=dao2.getallclasses();
@@ -35,6 +32,7 @@ List<Classes> list2=dao2.getallclasses();
   <option value="<%=ss.getName() %>"><%=ss.getName() %></option>
   <%}%>
 </select>
+<br>
 <br>
 <input type="submit" value="Save">
 </form>

@@ -23,7 +23,7 @@ List<Classes> list2=dao2.getallclasses();
   <option value="<%=ss.getName() %>"><%=ss.getName() %></option>
   <%}%>
 </select>
-
+<br>
 <br>
 <input type="submit">
 </form>

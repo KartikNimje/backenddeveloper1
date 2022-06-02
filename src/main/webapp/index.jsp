@@ -9,10 +9,14 @@
 </head>
 <body>
 
-<form action="profile.jsp">
+<form action="login.jsp">
 <h1>Welcome to Learners Academy</h1>
-Username : <input type="text" name=username required><br>
-Password : <input type="password" name=password required>
+<table>
+<tr><td>Username :</td><td><input type="text" name=username required></td></tr>
+<tr><td>Password :</td><td><input type="password" name=password required></td></tr>
+</table>
+ 
+ 
 <br>
 <input type="submit" value="Login">
 

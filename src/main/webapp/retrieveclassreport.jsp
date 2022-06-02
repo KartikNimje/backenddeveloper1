@@ -37,7 +37,7 @@
 	ClassreportDAO dao4=new ClassreportDAO();
 	List<Student> list=dao4.getallstudents(s);
 %>
-<table border="3"> 
+<table border="1"> 
 	
 	<tr><th>Id</th><th>Firstname</th><th>Lastname</th><th>DOB</th><th>Address</th><th>Phone</th></tr>
 	<%for(Student ss:list){ %>

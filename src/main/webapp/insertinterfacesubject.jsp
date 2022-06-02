@@ -7,11 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Add a subject</h1>
+<h1>Add New Subject</h1>
 <form action="insertsubject.jsp">
-Subject Id   : <input type="text" name="id" required>
-<br>
-Subject Name : <input type="text" name="name" required>
+<table>
+<tr><td>Subject Id   :</td><td><input type="text" name="id" required></td></tr>
+<tr><td>Subject Name : </td><td><input type="text" name="name" required></td></tr>
+</table>
 <br>
 <input type="submit" value="Save">
 </form>
