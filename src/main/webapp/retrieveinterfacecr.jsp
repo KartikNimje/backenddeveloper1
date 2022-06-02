@@ -10,21 +10,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="retrieveinterfacecr.jsp">
+<form action="retrieveclassreport.jsp">
+
 <%
 ClassesDAO dao2=new ClassesDAO();
 List<Classes> list2=dao2.getallclasses();
 %>
-<label for="class">Choose a Class to get the report:</label>
-
+<label for="class">Class :</label>
 <select name="class">
 
 <%for(Classes ss:list2){ %>	
   <option value="<%=ss.getName() %>"><%=ss.getName() %></option>
   <%}%>
 </select>
-<input type="submit" value="Class Report">
+
 <br>
+<input type="submit">
 </form>
 </body>
 </html>

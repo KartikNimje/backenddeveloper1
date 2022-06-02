@@ -55,19 +55,29 @@ List<Teacher> list1=dao1.getallteachers();
 </select>
 <br>
 <input type="submit" value="save">
+<br>
+
 
 </form>
-<h1>List of Subject and teacher</h1>
+<h1>List of Subject and teacher for <%=request.getParameter("class") %></h1>
 	<%
+		St st = new St();
+		st.setClasses(request.getParameter("class"));
 		STDAO dao3=new STDAO();
-		List<St> list3=dao3.getallst();
+		List<St> list3=dao3.getallst(st);
 	%>
 	<table> 
 	<%int i=1; %>
-	<tr><th>Sr.No</th><th>Subject</th><th>Teacher</th><th>Class</th><th>Actions</th></tr>
+	<tr><th>Sr.No</th><th>Subject</th><th>Teacher</th><th>Actions</th></tr>
 	<%for(St ss:list3){ %>
-		<tr><td><%=i++ %></td><td><%=ss.getSubject() %></td><td><%=ss.getTeacher() %></td><td><%=ss.getClasses()%></td><td><a href="deleteinterfacest.jsp">delete</a></td></tr>
+		<tr><td><%=i++ %></td><td><%=ss.getSubject() %></td><td><%=ss.getTeacher() %></td><td><a href="deleteinterfacest.jsp">delete</a></td></tr>
+	
 	<%}%>
 	</table>
+	
+<br>
+<form action="profile.jsp">
+<input type="submit" value="Home Page">
+</form>
 </body>
 </html>

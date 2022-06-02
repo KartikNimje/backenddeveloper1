@@ -26,7 +26,7 @@ public class STDAO {
 			ps.setString(3,c.getName());
 			
 			String sql1="insert into classreport values(?,?,?)";
-			PreparedStatement ps1=con.prepareStatement(sql);
+			PreparedStatement ps1=con.prepareStatement(sql1);
 			ps1.setString(1,c.getName());
 			ps1.setString(2,t.getFirstname());
 			ps1.setString(3,s.getName());
@@ -47,12 +47,13 @@ public class STDAO {
 			}
 			*/
 			
-			public List<St> getallst() throws ClassNotFoundException, SQLException{
+			public List<St> getallst(St st) throws ClassNotFoundException, SQLException{
 				ArrayList<St> list=new ArrayList<>();
 				Connection con=DbUtil.getConn();
-				St st = new St();
-				String sql="select * from st";
+				//St st = new St();
+				String sql="select * from st where classes=?";
 				PreparedStatement ps=con.prepareStatement(sql);
+				ps.setString(1, st.getClasses());
 				ResultSet rs=ps.executeQuery();
 				while(rs.next()) {
 					St s=new St();
@@ -62,6 +63,7 @@ public class STDAO {
 					list.add(s);
 					
 				}
+				//System.out.println(list);
 				return list;
 			}
 			/*

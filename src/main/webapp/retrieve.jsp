@@ -25,7 +25,10 @@
 	<%}%>
 	</table>
 
-
+<br>
+<form action="profile.jsp">
+<input type="submit" value="Home Page">
+</form>
 </body>
 </html>
 

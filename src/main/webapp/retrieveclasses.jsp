@@ -21,10 +21,13 @@
 	<table border="1"> 
 	<tr><th>Id</th><th>Class Name</th><th colspan="4">Actions</th></tr>
 	<%for(Classes ss:list){ %>
-		<tr><td><%=ss.getId() %></td><td><%=ss.getName() %></td><td><a href="editclasses.jsp">edit</a></td><td><a href="deleteinterfaceclasses.jsp">delete</a></td><td><a href="retrievest.jsp"> Subjects and Teachers </a></td><td><a href="retrieveclassreport.jsp">Class Report</a></td></tr>
+		<tr><td><%=ss.getId() %></td><td><%=ss.getName() %></td><td><a href="editclasses.jsp">edit</a></td><td><a href="deleteinterfaceclasses.jsp">delete</a></td><td><a href="retrieveinterfacest.jsp"> Subjects and Teachers </a></td><td><a href="retrieveinterfacecr.jsp">Class Report</a></td></tr>
 	<%}%>
 	</table>
 	
-
+<br>
+<form action="profile.jsp">
+<input type="submit" value="Home Page">
+</form>
 </body>
 </html>

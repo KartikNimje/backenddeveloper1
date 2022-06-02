@@ -24,5 +24,10 @@
 		<tr><td><%=ss.getId() %></td><td><%=ss.getFirstname() %></td><td><%=ss.getLastname()%></td><td><%=ss.getDob()%></td><td><%=ss.getAddress()%></td><td><%=ss.getPhone()%></td><td><%=ss.getDesignation()%></td><td><a href="editteacher.jsp">edit</a></td><td><a href="deleteteacher.jsp">delete</a></td></tr>
 	<%}%>
 	</table>
+	
+<br>
+<form action="profile.jsp">
+<input type="submit" value="Home Page">
+</form>
 </body>
 </html>

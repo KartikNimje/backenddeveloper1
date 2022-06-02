@@ -29,7 +29,7 @@ else{
 <a href="addsubjectsandteachers.jsp">insert more record</a>
 <br>
 
-<form action="retrievest.jsp">
+<form action="retrieveinterfacest.jsp">
 
 <input type="submit" value="Get subjects and teachers">
 
