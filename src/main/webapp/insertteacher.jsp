@@ -14,6 +14,7 @@ Teacher s=new Teacher();
 s.setId(request.getParameter("id"));
 s.setFirstname(request.getParameter("firstname"));
 s.setLastname(request.getParameter("lastname"));
+s.setDob(request.getParameter("dob"));
 s.setAddress(request.getParameter("address"));
 s.setPhone(request.getParameter("phone"));
 s.setDesignation(request.getParameter("designation"));

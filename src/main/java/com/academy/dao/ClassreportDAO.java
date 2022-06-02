@@ -16,9 +16,10 @@ public class ClassreportDAO {
 		ArrayList<Classreport> list=new ArrayList<>();
 		Connection con=DbUtil.getConn();
 		Classreport s=new Classreport();
-		String sql="select * from classreport where classes=?";
+		System.out.println("getter : "+s.getClasses());
+		String sql="select * from classreport";
 		PreparedStatement ps=con.prepareStatement(sql);
-		ps.setString(1, s.getClasses());
+		//ps.setString(1, s.getClasses());
 		ResultSet rs=ps.executeQuery();
 		while(rs.next()) {
 			s.setClasses(rs.getString(1));

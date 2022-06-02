@@ -7,9 +7,11 @@ public class Student {
 	private String id;
 	private String firstname;
 	private String lastname;
-	private Date doj;
+	private String dob;
 	private String address;
 	private String phone;
+	private String classes;
+	
 	
 	public String getId() {
 		return id;
@@ -29,12 +31,12 @@ public class Student {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
-	public Date getDoj() {
-		return doj;
+	public String getDob() {
+		return dob;
 	}
 
-	public void setDoj(Date doj) {
-		this.doj = doj;
+	public void setDob(String dob) {
+		this.dob = dob;
 	}
 	
 	public String getAddress() {
@@ -49,7 +51,12 @@ public class Student {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	
+	public String getClasses() {
+		return classes;
+	}
+	public void setClasses(String classes) {
+		this.classes = classes;
+	}
 		
 
 }

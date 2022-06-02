@@ -15,6 +15,8 @@
 		<br>
 		Enter the updated Lastname : <input type="text" name="lastname">
 		<br>
+		Enter the updated DOB : <input type="date" name="dob">
+		<br>
 		Enter the updated Address : <input type="text" name="address" required>
 		<br>
 		Enter the updated Phone : <input type="text" name="phone">

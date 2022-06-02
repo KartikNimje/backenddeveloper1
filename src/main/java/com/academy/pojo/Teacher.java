@@ -5,6 +5,7 @@ public class Teacher {
 	private String id;
 	private String firstname;
 	private String lastname;
+	private String dob;
 	private String address;
 	private String phone;
 	private String designation;
@@ -25,6 +26,12 @@ public class Teacher {
 	}
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
+	}
+	public String getDob() {
+		return dob;
+	}
+	public void setDob(String dob) {
+		this.dob = dob;
 	}
 	public String getAddress() {
 		return address;

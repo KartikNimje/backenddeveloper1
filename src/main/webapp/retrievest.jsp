@@ -63,9 +63,10 @@ List<Teacher> list1=dao1.getallteachers();
 		List<St> list3=dao3.getallst();
 	%>
 	<table> 
-	<tr><th>Subject</th><th>Teacher</th><th>Class</th><th>Actions</th></tr>
+	<%int i=1; %>
+	<tr><th>Sr.No</th><th>Subject</th><th>Teacher</th><th>Class</th><th>Actions</th></tr>
 	<%for(St ss:list3){ %>
-		<tr><td><%=ss.getSubject() %></td><td><%=ss.getTeacher() %></td><td><%=ss.getClasses()%></td><td><a href="deleteinterfacest.jsp">delete</a></td></tr>
+		<tr><td><%=i++ %></td><td><%=ss.getSubject() %></td><td><%=ss.getTeacher() %></td><td><%=ss.getClasses()%></td><td><a href="deleteinterfacest.jsp">delete</a></td></tr>
 	<%}%>
 	</table>
 </body>

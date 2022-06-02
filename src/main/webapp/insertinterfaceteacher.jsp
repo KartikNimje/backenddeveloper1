@@ -7,13 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Teacher registration</h1>
+<h1>Add New Teacher</h1>
 <form action="insertteacher.jsp">
 Teacherid   : <input type="text" name="id" required>
 <br>
 Firstname : <input type="text" name="firstname" required>
 <br>
 Lastname : <input type="text" name="lastname">
+<br>
+DOB : <input type="date" name="dob">
 <br>
 Address : <input type="text" name="address" required>
 <br>

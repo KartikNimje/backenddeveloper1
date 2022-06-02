@@ -11,17 +11,17 @@
 </head>
 <body>
 	<form action="insertinterfaceclasses.jsp">
-	<input type="submit" value="Add a Class">
+	<input type="submit" value="Add New Class">
 	</form>
 <h1>List of Classes</h1>
 	<%
 		ClassesDAO dao=new ClassesDAO();
 		List<Classes> list=dao.getallclasses();
 	%>
-	<table> 
+	<table border="1"> 
 	<tr><th>Id</th><th>Class Name</th><th colspan="4">Actions</th></tr>
 	<%for(Classes ss:list){ %>
-		<tr><td><%=ss.getId() %></td><td><%=ss.getName() %></td><td><a href="editclasses.jsp">edit</a></td><td><a href="deleteinterfaceclasses.jsp">delete</a></td><td><a href="retrievest.jsp">Subjects and Teachers</a></td><td><a href="classreport.jsp">Class Report</a></td></tr>
+		<tr><td><%=ss.getId() %></td><td><%=ss.getName() %></td><td><a href="editclasses.jsp">edit</a></td><td><a href="deleteinterfaceclasses.jsp">delete</a></td><td><a href="retrievest.jsp"> Subjects and Teachers </a></td><td><a href="retrieveclassreport.jsp">Class Report</a></td></tr>
 	<%}%>
 	</table>
 	

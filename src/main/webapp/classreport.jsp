@@ -17,7 +17,7 @@ List<Classes> list2=dao2.getallclasses();
 %>
 <label for="class">Choose a Class to get the report:</label>
 
-<select name="class" id="class">
+<select name="class">
 
 <%for(Classes ss:list2){ %>	
   <option value="<%=ss.getName() %>"><%=ss.getName() %></option>

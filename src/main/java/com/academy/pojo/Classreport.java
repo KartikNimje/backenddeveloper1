@@ -6,11 +6,19 @@ public class Classreport {
 	private String subject;
 	private String teacher;
 	
-	public String getClasses() {
-		return classes;
+	
+	public Classreport() {
+		//super();
+		// TODO Auto-generated constructor stub
 	}
 	public void setClasses(String classes) {
+		
 		this.classes = classes;
+		
+	}
+	public String getClasses() {
+		
+		return classes;
 	}
 	
 	public String getSubject() {

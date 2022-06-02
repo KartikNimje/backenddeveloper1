@@ -14,8 +14,10 @@ Student s=new Student();
 s.setId(request.getParameter("id"));
 s.setFirstname(request.getParameter("firstname"));
 s.setLastname(request.getParameter("lastname"));
+s.setDob(request.getParameter("dob"));
 s.setAddress(request.getParameter("address"));
 s.setPhone(request.getParameter("phone"));
+s.setClasses(request.getParameter("class"));
 StudentDAO dao=new StudentDAO();
 int row=dao.insertstudent(s);
 if(row>0){

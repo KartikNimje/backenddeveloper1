@@ -25,6 +25,12 @@ public class STDAO {
 			ps.setString(2,t.getFirstname());
 			ps.setString(3,c.getName());
 			
+			String sql1="insert into classreport values(?,?,?)";
+			PreparedStatement ps1=con.prepareStatement(sql);
+			ps1.setString(1,c.getName());
+			ps1.setString(2,t.getFirstname());
+			ps1.setString(3,s.getName());
+			
 			return ps.executeUpdate();
 		}
 	  
