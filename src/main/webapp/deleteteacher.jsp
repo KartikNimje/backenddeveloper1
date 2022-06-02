@@ -22,7 +22,7 @@
 			out.print("deletion failed");
 		}
 	%>
-	
+	<br>
 	<form action="retrieveteacher.jsp">
 		<input type="submit" value="getteachers">
 	</form>

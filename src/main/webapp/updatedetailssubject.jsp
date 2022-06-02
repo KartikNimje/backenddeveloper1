@@ -23,7 +23,7 @@
 		}
 	
 	%>
-	
+	<br>
 	<form action="retrievesubject.jsp">
 		<input type="submit" value="Subjects List">
 	</form>

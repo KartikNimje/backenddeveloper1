@@ -11,7 +11,7 @@
 <body>
 <%
 Classes s=new Classes();
-s.setId(request.getParameter("id"));
+
 s.setName(request.getParameter("name"));
 ClassesDAO dao=new ClassesDAO();
 int row=dao.insertclass(s);

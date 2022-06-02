@@ -10,7 +10,6 @@
 <h1>Add New Subject</h1>
 <form action="insertsubject.jsp">
 <table>
-<tr><td>Subject Id   :</td><td><input type="text" name="id" required></td></tr>
 <tr><td>Subject Name : </td><td><input type="text" name="name" required></td></tr>
 </table>
 <br>

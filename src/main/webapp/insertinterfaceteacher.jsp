@@ -10,7 +10,7 @@
 <h1>Add New Teacher</h1>
 <form action="insertteacher.jsp">
 <table>
-<tr><td>Teacherid   : </td><td><input type="text" name="id" required></td></tr>
+
 <tr><td>Firstname :</td><td><input type="text" name="firstname" required></td></tr>
 <tr><td>Lastname : </td><td><input type="text" name="lastname"></td></tr>
 <tr><td>DOB : </td><td><input type="date" name="dob"></td></tr>

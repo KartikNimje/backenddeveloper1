@@ -11,7 +11,6 @@
 <body>
 <%
 Subject s=new Subject();
-s.setId(request.getParameter("id"));
 s.setName(request.getParameter("name"));
 SubjectDAO dao=new SubjectDAO();
 int row=dao.insertsubject(s);

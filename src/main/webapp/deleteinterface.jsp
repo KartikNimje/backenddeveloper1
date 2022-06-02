@@ -23,7 +23,7 @@
 			out.print("deletion failed");
 		}
 	%>
-	
+	<br>
 	<form action="retrieve.jsp">
 		<input type="submit" value="getstudents">
 	</form>

@@ -29,7 +29,7 @@
 		}
 	
 	%>
-	
+	<br>
 	<form action="retrieveteacher.jsp">
 		<input type="submit" value="Teachers List">
 	</form>

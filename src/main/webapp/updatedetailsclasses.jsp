@@ -23,7 +23,7 @@
 		}
 	
 	%>
-	
+	<br>
 	<form action="retrieveclasses.jsp">
 		<input type="submit" value="Class List">
 	</form>
